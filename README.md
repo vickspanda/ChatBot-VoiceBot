@@ -60,7 +60,7 @@ This project is designed to assist students and families with college admission 
    ```bash
    $ (venv) python train.py
    ```
-2. **Train the Bot**:
+2. **Start the Server**:
    ```bash
    $ (venv) python app.py
    ```
