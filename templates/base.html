@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+<link rel="stylesheet" href="{{ url_for('static', filename='fc_web.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fergusson College</title>
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/fc-logo.png') }}">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!--NAVIGATION-->
+        <nav>
+
+        
+            <img src="{{ url_for('static', filename='images/fc-logo.png') }}" class="img" alt="logo">
+
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!--END OF NAVIGATION-->
+        
+
+        <div class="section">
+            <h3 class="deccan">Deccan Education Society's</h3>
+            <h1 class="fergusson">Fergusson College</h1>
+            <marquee><p> Strive for excellence in education in keeping with the motto of the college, “Knowledge is Power” and prepare young minds for imbibing knowledge, skills and sensitivity.</p></marquee>
+            <br><br>
+            <div algin="center">
+            <a href="#"><button class="btn-1">GET STARTED</button></a>
+            </div>
+            <!--FEATURES-->
+            <div class="features">
+                <button>News & Events</button>
+                <button>General Circulars</button>
+                <button>Examination Circulars</button>
+            </div>
+            <!--END OF FEATURES-->
+        </div>
+        <!--END OF SECTION-->
+    </div>
+    <!--END OF WRAPPER-->
+
+
+
+        <!--SHOWCASE-->
+        <showcase>
+            <h1>Popular Courses We Offer</h1>
+            <div id="courses">
+                <div class="cs">
+                    <h3>Computer Science</h3>
+                    <img src="{{ url_for('static', filename='images/cse.jpeg') }}" width="50%" alt="cs"><br>
+                    <a href="#"><button class="apply">Apply Here</button></a>
+                </div>
+                <div class="business">
+                    <h3>Business Studies</h3>
+                    <img src="{{ url_for('static', filename='images/business.jpeg') }}" alt="business"><br>
+                    <a href="#"><button class="apply">Apply Here</button></a>
+                </div>
+                <div class="journalism">
+                    <h3>Media and Journalism</h3>
+                    <img src="{{ url_for('static', filename='images/journalism.jpeg') }}" alt="media"><br>
+                    <a href="#"><button class="apply">Apply Here</button></a>
+                </div>
+                <div class="arts">
+                    <h3>Arts & Humanities</h3>
+                    <img src="{{ url_for('static', filename='images/arts.jpeg') }}" alt="arts"><br>
+                    <a href="#"><button class="apply">Apply Here</button></a>
+                </div>
+                <div class="medical">
+                    <h3>Biochemistry</h3>
+                    <img src="{{ url_for('static', filename='images/medical.jpeg') }}" alt="ms"><br>
+                    <a href="#"><button class="apply">Apply Here</button></a>
+                </div>
+            </div>
+        </showcase>
+        <!--END OF SHOWCASE-->
+
+        
+
+        <!-- Site footer -->
+
+
+    <footer>
+        
+        <div class="about">
+            <h2>About</h2>
+            <p class="top">Deccan Education Society's</p>
+            <p>Fergusson College</p>
+            <p class="mb-0">(Autonomous)</p>
+            <p class="top">Affiliated to Savitribai Phule Pune University</p>
+            <!--<p class="top">An Autonomous College | Under Savitribai Phule Pune University</p>-->
+            <p class="bottom">NAAC accredited “A” Grade (3.62 CGPA) | AISHE Code : C - 41431</p>
+            <p class="bottom">UGC Special Heritage Status | UGC - College of Excellence (CE) | DBT - STAR Status</p>
+            <p class="bottom"> #F. C. Road, Shivaji Nagar, Pune - 411004</p>
+        </div>
+
+        <div class="quick_links">
+
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">DBT Star College Scheme</a></li>
+                <li><a href="#">Junior College</a></li>
+                <li><a href="#">Senior College</a></li>
+                <li><a href="#">Alumni </a></li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            Fergusson College, F.C. Road, Pune 411004
+            Phone Number
+            020-67656000
+            E-mail Id
+            principal@fergusson.edu
+        </div>
+    </footer>
+
+
+
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                            alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Student Support</h4>
+                        <p class="chatbox__description--header">Hi. My Name is Chloe. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <div class="input_and_mic">
+                        <input type="text" placeholder="Write a message..." class="placeholder_text text-input" id="speechToText">
+                        <img src="static/images/mic.png" class="mic_icon" onclick="voice()">
+                    </div>
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root | tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
