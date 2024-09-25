@@ -56,7 +56,7 @@ This project is designed to assist students and families with college admission 
 
 ## Running the Application
 
-1. **Start Flask Server**:
+1. **Train the Server**:
    ```bash
    $ (venv) python train.py
    ```
