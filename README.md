@@ -66,7 +66,11 @@ This project is designed to assist students and families with college admission 
    ```
 
 3. **Access the Application**:
-   Open your browser and go to `http://localhost:5000`.
+   Open your browser and go to
+
+   ```
+   http://localhost:5000
+   ```
 
 
 ## Usage
