@@ -91,7 +91,7 @@ You can update the **`intents.json`** file to add or modify responses for differ
       "patterns": [ "hii", "hi", "Hii", "Hi", "Hey", "How are you",  "Is anyone there?", "Hello"
       ],
       "responses": [
-        "Hey",
+        "Hey :-)",
         "Hello, thanks for visiting, will help you with my fullest",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
