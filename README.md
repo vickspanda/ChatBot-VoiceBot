@@ -31,8 +31,8 @@ This project is designed to assist students and families with college admission 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/college-admission-bot.git
-   cd college-admission-bot
+   git clone https://github.com/vickspanda/ChatBot-VoiceBot.git
+   cd ChatBot-VoiceBot
    ```
 
 2. **Set up a virtual environment**:
