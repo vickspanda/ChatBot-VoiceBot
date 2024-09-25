@@ -1,8 +1,8 @@
-# ChatBot-VoiceBot
+# (Chat+Voice)-Bot
 
 ## Overview
 
-This project is designed to assist students and families with college admission queries through a **ChatBot** and **VoiceBot** system. The bots provide instant, personalized responses, addressing common questions related to admissions, such as requirements, deadlines, financial aid, and more. Built using Python and various web technologies, the system uses **Natural Language Processing (NLP)** and **Machine Learning (ML)** to improve interaction and accuracy.
+This project is designed to assist students and families with college admission queries through a **ChatBot** and **VoiceBot** system. The bots provide instant, personalized responses, addressing common questions related to admissions and basic College Information. Built using Python and various web technologies, the system uses **Natural Language Processing (NLP)** and **Machine Learning (ML)** to improve interaction and accuracy.
 
 ## Features
 
@@ -10,7 +10,6 @@ This project is designed to assist students and families with college admission 
 - **VoiceBot**: Uses speech recognition for voice-based queries, improving user convenience.
 - **NLP Integration**: Identifies user intent and provides relevant, precise answers.
 - **Speech Recognition**: Optimizes the VoiceBot’s accuracy and user experience.
-- **Modular Codebase**: Clean, optimized code using Flask and Python frameworks for better maintainability.
 
 ## Technologies Used
 
@@ -38,38 +37,44 @@ This project is designed to assist students and families with college admission 
 2. **Set up a virtual environment**:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # For Linux/Mac
-   venv\Scripts\activate  # For Windows
+   . venv/bin/activate
    ```
 
 3. **Install required dependencies**:
    ```bash
-   pip install -r requirements.txt
+   (venv) pip install Flask torch torchvision nltk
    ```
 
 4. **Download NLTK Resources**:
    Inside the Python shell:
-   ```python
-   import nltk
-   nltk.download('punkt')
+   ```bash
+   $ (venv) python
+   >>> import nltk
+   >>> nltk.download('punkt')
+   >>> nltk.download('punkt_tab')
    ```
 
 ## Running the Application
 
 1. **Start Flask Server**:
    ```bash
-   python app.py
+   $ (venv) python train.py
+   ```
+   
+2.**Start Flask Server**:
+   ```bash
+   $ (venv) python app.py
    ```
 
-2. **Access the Application**:
+3. **Access the Application**:
    Open your browser and go to `http://localhost:5000`.
 
 
 ## Usage
 
-1. **ChatBot**: Users can enter their admission-related queries through a text input interface on the college website. The ChatBot will respond based on the query, using NLP techniques to understand user intent.
+1. **Chat-Bot**: Users can enter their admission-related or basic college related queries through a text input interface on the college website. The ChatBot will respond based on the query, using NLP techniques to understand user intent.
   
-2. **VoiceBot**: Users can interact with the VoiceBot by speaking into their device. The bot will process their speech, identify the query, and respond accordingly using NLP and speech recognition algorithms.
+2. **Voice-Bot**: Users can interact with the Voice-Bot by speaking after clicking on the Mic Icon given on the ChatBot-VoiceBot Interface. The bot will process their speech, then user have to send the query, and then response will be generated.
 
 ## Customization
 
@@ -88,8 +93,3 @@ You can update the **`intents.json`** file to add or modify responses for differ
 }
 ```
 
-## Future Enhancements
-
-- **Integrate Machine Learning models** to improve accuracy in query recognition.
-- **Deploy on the cloud** to make the system scalable and accessible to a broader audience.
-- **Add more features**, such as personalized responses based on user profiles.
