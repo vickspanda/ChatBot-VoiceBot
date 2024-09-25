@@ -60,8 +60,7 @@ This project is designed to assist students and families with college admission 
    ```bash
    $ (venv) python train.py
    ```
-   
- 2.**Start Flask Server**:
+2. **Train the Bot**:
    ```bash
    $ (venv) python app.py
    ```
